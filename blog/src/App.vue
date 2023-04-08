@@ -1,19 +1,19 @@
 <template>
   <div>
-    <img alt="Vue logo" src="./assets/logo.png">
-  <HomeMy/>
+    <img alt="Vue logo" src="./assets/logo.png" />
+    <HomeMy data="Hello from props " msg="Its Alvin here "/>
   </div>
 </template>
 
 <script>
-import Home from './components/Home.vue';
+import HomeMy from "./components/Home.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
     HomeMy,
-  }
-}
+  },
+};
 </script>
 
 <style>
