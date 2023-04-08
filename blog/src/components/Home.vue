@@ -1,6 +1,8 @@
 <template>
     <div>
-        <button v-on:click="hello" >Call hello function</button>
+        <h1 v-if="show">Conditional rendering</h1>
+        <h1 v-else>Else side</h1>
+        <button v-on:click="display" >Toggle</button>
     </div>
     
 </template>
@@ -12,9 +14,15 @@ export default {
         data : String,
         msg : String
     },
+    data(){
+        return{
+            show:true
+        }
+
+    },
     methods : {
-        hello(){
-            alert("Function called")
+        display(){
+            this.show = !this.show
         }
     }
 }
