@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h1>{{data}}{{ msg }}</h1>
+        <button v-on:click="hello" >Call hello function</button>
     </div>
     
 </template>
@@ -11,6 +11,11 @@ export default {
     props : {
         data : String,
         msg : String
+    },
+    methods : {
+        hello(){
+            alert("Function called")
+        }
     }
 }
 </script>
