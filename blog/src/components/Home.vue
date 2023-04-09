@@ -1,8 +1,7 @@
 <template>
     <div>
         <h1 v-if="show">Conditional rendering</h1>
-        <h1 v-else>Else side</h1>
-        <button v-on:click="display" >Toggle</button>
+        
     </div>
     
 </template>
